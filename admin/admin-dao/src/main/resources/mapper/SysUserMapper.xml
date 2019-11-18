@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.local.admin.dao.mapper.SysUserMapper">
+
+    <insert id="saveUser" parameterType="com.local.admin.model.UserEntity">
+      insert into sys_user(
+        id,
+        create_user,
+        create_time,
+        update_user,
+        update_time,
+        account_no,
+        name,
+        password,
+        phone,
+        email,
+        remark,
+        status
+      )
+
+      values(
+        #{id,jdbcType = VARCHAR},
+        #{createUser,jdbcType = VARCHAR},
+        #{createTime,jdbcType = TIMESTAMP},
+        #{updateUser,jdbcType = VARCHAR},
+        #{updateTime,jdbcType = TIMESTAMP},
+        #{accountNo,jdbcType = VARCHAR},
+        #{name,jdbcType = VARCHAR},
+        #{password,jdbcType = VARCHAR},
+        #{phone,jdbcType = VARCHAR},
+        #{email,jdbcType = VARCHAR},
+        #{remark,jdbcType = VARCHAR},
+        #{status,jdbcType = CHAR}
+      )
+
+
+    </insert>
+
+
+
+</mapper>

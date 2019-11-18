@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.local</groupId>
+        <artifactId>common-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../common/common-parent</relativePath>
+    </parent>
+
+    <artifactId>admin</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>admin</name>
+    <description>admin web层</description>
+    <packaging>pom</packaging>
+
+    <properties>
+        <admin.version>0.0.1-SNAPSHOT</admin.version>
+    </properties>
+
+    <modules>
+        <module>admin-model</module>
+        <module>admin-util</module>
+        <module>admin-dao</module>
+        <module>admin-service</module>
+        <module>admin-web</module>
+    </modules>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.local</groupId>
+                <artifactId>common-parent</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.local</groupId>
+                <artifactId>admin-model</artifactId>
+                <version>${admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.local</groupId>
+                <artifactId>admin-dao</artifactId>
+                <version>${admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.local</groupId>
+                <artifactId>admin-service</artifactId>
+                <version>${admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.local</groupId>
+                <artifactId>admin-web</artifactId>
+                <version>${admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.local</groupId>
+                <artifactId>admin-util</artifactId>
+                <version>${admin.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

@@ -1,0 +1,59 @@
+server:
+  port: 8551
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    schema: classpath:db/schema.sql
+    data: classpath:db/data.sql
+    hikari:
+      jdbc-url: jdbc:h2:mem:test_db
+      username: root
+      password: root
+    driver-class-name: org.h2.Driver
+  application:
+    name: admin-service
+  cloud:
+    consul:
+      host: localhost  #注册到的consul的ip
+      port: 8500    #注册到的consul的端口
+      discovery:
+        register: true  #是否注册到consul 消费端可以不注册到consul，但是如果消费端需要使用consul服务，任然需要添加consul配置
+        serviceName: ${spring.application.name}   #服务名
+#        healthCheckPath: ${management.context-path}/health   #健康检查接口
+        healthCheckInterval: 15s    #健康检查间隔
+  zikin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 1
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: hystrix.stream  #公开/actuator/hystrix.stream管理端点，hystrix内部监控会一直往该端点写数据
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+  type-aliases-package: com.local.admin.model #实体扫描，多个package用逗号或者分号分隔
+  global-config:
+    refresh: true
+    db-config.id-type: INPUT #主键类型  AUTO:"数据库ID自增"; INPUT:"用户输入ID";ID_WORKER:"全局唯一ID (数字类型唯一ID)";ID_WORKER_STR:全局唯一ID (字符串类型唯一ID); UUID:"全局唯一ID UUID";NONE：默认状态默认为ID_WORKER 全局唯一ID为空自动填充
+    db-config:
+      field-strategy: NOT_EMPTY #字段策略 IGNORED:"忽略判断",NOT_NULL:"非 NULL 判断"),NOT_EMPTY:"非空判断"
+      table-underline: true #驼峰下划线转换
+#数据库大写下划线转换
+#mybatis-plus.global-config.db-config.capital-mode=true
+      #逻辑删除配置 mybatis-plus逻辑删除的数据，在查询和修改都不会在对删除的数据进行操作。
+      logic-delete-value: 1 #逻辑删除后字段值
+      logic-not-delete-value: 0 逻辑删除前字段值
+      db-type: H2 #db类型
+#刷新mapper 调试神器
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+es:
+  job:
+    test: 555555555555555555555555
