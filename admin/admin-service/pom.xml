@@ -36,11 +36,6 @@
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
         </dependency>
-        <!-- 项目util包 -->
-        <dependency>
-            <groupId>com.local</groupId>
-            <artifactId>admin-util</artifactId>
-        </dependency>
         <!-- 通用util包 -->
         <dependency>
             <groupId>com.local</groupId>

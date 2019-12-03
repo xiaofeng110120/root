@@ -1,15 +1,19 @@
-package com.local.admin.service.vo.sysuser;
+package com.local.admin.vo.sysuser;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 import java.io.Serializable;
 
-@Data
+@Setter
+@Getter
+@ToString
 @ApiModel(value = "新增用户请求")
 public class AddSysUserReqVo implements Serializable {
 
@@ -27,7 +31,7 @@ public class AddSysUserReqVo implements Serializable {
     private String phone;
 
     @ApiModelProperty(value = "邮箱", required = true)
-    @Email(regexp = ".*",message = "邮箱格式错误")
+    @Email(regexp = ".*", message = "邮箱格式错误")
     @NotEmpty(message = "email不可为空")
     private String email;
 

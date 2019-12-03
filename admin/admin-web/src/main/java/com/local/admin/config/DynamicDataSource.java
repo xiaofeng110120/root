@@ -1,6 +1,6 @@
 //package com.local.admin.config;
 //
-//import com.local.admin.service.util.DBContext;
+//import com.local.admin.util.DBContext;
 //import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 //
 //public class DynamicDataSource extends AbstractRoutingDataSource {

@@ -21,11 +21,6 @@
             <groupId>com.local</groupId>
             <artifactId>job-dao</artifactId>
         </dependency>
-        <!-- 项目util包 -->
-        <dependency>
-            <groupId>com.local</groupId>
-            <artifactId>job-util</artifactId>
-        </dependency>
         <!-- 通用util包 -->
         <dependency>
             <groupId>com.local</groupId>

@@ -1,6 +1,6 @@
 package com.local.admin.config;
 
-import com.local.admin.service.util.DBContext;
+import com.local.admin.util.DBContext;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;

@@ -1,10 +1,15 @@
-package com.local.admin.service.vo.base;
+package com.local.admin.vo.base;
 
 import io.swagger.annotations.ApiModel;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.io.Serializable;
-@Data
+
+@Setter
+@Getter
+@ToString
 @ApiModel(value = "")
 public class IdReqVo implements Serializable {
 

@@ -1,6 +1,5 @@
 package com.local.admin.model.base;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

@@ -1,4 +1,4 @@
-package com.local.admin.service.constant;
+package com.local.admin.constant;
 
 import lombok.Getter;
 import lombok.Setter;

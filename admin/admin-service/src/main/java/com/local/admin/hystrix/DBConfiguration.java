@@ -1,4 +1,4 @@
-package com.local.admin.service.hystrix;
+package com.local.admin.hystrix;
 
 import com.netflix.hystrix.strategy.HystrixPlugins;
 import com.netflix.hystrix.strategy.concurrency.HystrixConcurrencyStrategy;

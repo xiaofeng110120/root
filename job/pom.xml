@@ -22,7 +22,6 @@
 
 
     <modules>
-        <module>job-util</module>
         <module>job-model</module>
         <module>job-dao</module>
         <module>job-service</module>
@@ -50,11 +49,6 @@
             <dependency>
                 <groupId>com.local</groupId>
                 <artifactId>job-web</artifactId>
-                <version>${job.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.local</groupId>
-                <artifactId>job-util</artifactId>
                 <version>${job.version}</version>
             </dependency>
         </dependencies>

@@ -22,7 +22,6 @@
 
     <modules>
         <module>admin-model</module>
-        <module>admin-util</module>
         <module>admin-dao</module>
         <module>admin-service</module>
         <module>admin-web</module>
@@ -54,11 +53,6 @@
             <dependency>
                 <groupId>com.local</groupId>
                 <artifactId>admin-web</artifactId>
-                <version>${admin.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.local</groupId>
-                <artifactId>admin-util</artifactId>
                 <version>${admin.version}</version>
             </dependency>
         </dependencies>

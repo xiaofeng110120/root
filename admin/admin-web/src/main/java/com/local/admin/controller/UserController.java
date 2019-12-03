@@ -2,8 +2,8 @@ package com.local.admin.controller;
 
 import com.local.admin.response.RestResponse;
 import com.local.admin.service.UserService;
-import com.local.admin.service.constant.PropConfig;
-import com.local.admin.service.vo.sysuser.AddSysUserReqVo;
+import com.local.admin.constant.PropConfig;
+import com.local.admin.vo.sysuser.AddSysUserReqVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

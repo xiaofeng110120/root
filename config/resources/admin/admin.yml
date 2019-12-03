@@ -87,7 +87,7 @@ spring:
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml
-  type-aliases-package: com.local.admin.service.util.admin.entity #实体扫描，多个package用逗号或者分号分隔
+  type-aliases-package: com.local.admin.util.admin.entity #实体扫描，多个package用逗号或者分号分隔
   global-config:
     refresh: true
     db-config.id-type: INPUT #主键类型  AUTO:"数据库ID自增"; INPUT:"用户输入ID";ID_WORKER:"全局唯一ID (数字类型唯一ID)";ID_WORKER_STR:全局唯一ID (字符串类型唯一ID); UUID:"全局唯一ID UUID";NONE：默认状态默认为ID_WORKER 全局唯一ID为空自动填充

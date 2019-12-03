@@ -1,4 +1,4 @@
-package com.local.admin.service.hystrix;
+package com.local.admin.hystrix;
 
 import com.baomidou.dynamic.datasource.toolkit.DynamicDataSourceContextHolder;
 import com.netflix.hystrix.HystrixThreadPoolKey;

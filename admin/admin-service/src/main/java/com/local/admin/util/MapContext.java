@@ -1,4 +1,4 @@
-package com.local.admin.service.util;
+package com.local.admin.util;
 
 import java.util.HashMap;
 import java.util.Map;

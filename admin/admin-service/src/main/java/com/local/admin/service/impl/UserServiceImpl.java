@@ -1,13 +1,11 @@
 package com.local.admin.service.impl;
 
 import com.baomidou.dynamic.datasource.annotation.DS;
-import com.baomidou.dynamic.datasource.toolkit.DynamicDataSourceContextHolder;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.local.admin.dao.mapper.SysUserMapper;
 import com.local.admin.model.UserEntity;
 import com.local.admin.service.UserService;
-import com.local.admin.service.util.DBContext;
-import com.local.admin.service.vo.sysuser.AddSysUserReqVo;
+import com.local.admin.vo.sysuser.AddSysUserReqVo;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.stereotype.Service;
