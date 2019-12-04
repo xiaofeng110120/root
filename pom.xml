@@ -5,13 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.6.RELEASE</version>
+        <artifactId>common-parent</artifactId>
+        <groupId>com.local</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>common/common-parent</relativePath>
     </parent>
 
     <artifactId>root</artifactId>
-    <groupId>com.local</groupId>
+    <!--<groupId>com.local</groupId>-->
     <version>0.0.1-SNAPSHOT</version>
 
     <packaging>pom</packaging>
@@ -24,6 +25,7 @@
         <module>admin</module>
         <module>job</module>
         <module>zuul</module>
+        <module>auth</module>
     </modules>
 
 
