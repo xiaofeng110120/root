@@ -20,12 +20,9 @@
     <name>root</name>
 
     <modules>
-        <module>config</module>
         <module>common</module>
         <module>admin</module>
-        <module>job</module>
         <module>zuul</module>
-        <module>auth</module>
     </modules>
 
 

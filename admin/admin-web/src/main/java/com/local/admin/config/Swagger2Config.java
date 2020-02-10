@@ -16,24 +16,24 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class Swagger2Config {
 
     @Bean
-    public Docket api() {
+    public Docket baseRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
+                .groupName("基础版")
                 .select()
-                // 自行修改为自己的包路径
-                .apis(RequestHandlerSelectors.basePackage("com.local.admin.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.local.admin"))
                 .paths(PathSelectors.any())
                 .build();
     }
 
-    private ApiInfo apiInfo() {
+    @Bean
+    public ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("swagger-api文档")
-                .description("swagger接入教程")
-                //服务条款网址
-                .termsOfServiceUrl("https://www.baidu.com")
+                .title("xxx接口文档")
+                .description("xxx接口文档")
+                .termsOfServiceUrl("http://www.xiaofeng.pub/")
+                .contact(new Contact("肖枫", "https://www.xiaofeng.pub/", "xiaofeng110120@outlook.com"))
                 .version("1.0")
-                .contact(new Contact("xiaofeng", "https://outlook.live.com", "xiaofeng110120@outlook.com"))
                 .build();
     }
 

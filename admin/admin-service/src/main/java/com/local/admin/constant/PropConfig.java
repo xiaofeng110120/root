@@ -14,13 +14,6 @@ import org.springframework.stereotype.Component;
 @ToString
 public class PropConfig {
 
-    @Value("${server.port}")
-    private String port;
-
-
-    @Value("${admin.personal.test}")
-    private String test;
-
 
 
 
