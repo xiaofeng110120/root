@@ -27,7 +27,7 @@
         <mybatis-starter-version>1.2.0</mybatis-starter-version>
         <mybatis-plus.version>3.1.0</mybatis-plus.version>
         <mybatis-starter-version>1.2.0</mybatis-starter-version>
-        <h2.version>1.4.199</h2.version>
+        <h2.version>2.1.210</h2.version>
         <swagger2.springfox-swagger2>2.8.0</swagger2.springfox-swagger2>
         <swagger2.springfox-swagger-ui>2.8.0</swagger2.springfox-swagger-ui>
         <lomback.version>1.18.4</lomback.version>
